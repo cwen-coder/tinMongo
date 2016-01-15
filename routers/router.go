@@ -11,9 +11,6 @@ func init() {
 		Directory:  "templates",
 		Extensions: []string{".tmpl", ".html"},
 		Charset:    "UTF-8",
-		Funcs: []template.FuncMap{
-			{},
-		},
 	}))
 
 	m.Run()
