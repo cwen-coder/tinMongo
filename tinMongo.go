@@ -13,7 +13,7 @@ func main() {
 	m := martini.Classic()
 	m.Use(render.Renderer(render.Options{
 		Directory:  "templates",
-		Extensions: []string{".tmpl", ".html"},
+		Extensions: []string{".tpl", ".html"},
 		Charset:    "UTF-8",
 	}))
 	routes.Route(m)
