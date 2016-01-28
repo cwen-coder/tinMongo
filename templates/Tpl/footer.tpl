@@ -4,5 +4,5 @@
 
 <footer>
   <hr>
-  <p class="am-padding-left">© 2016 CWen  &&  zjj.</p>
+  <p class="am-padding-left">© 2016 CWen  &&  Zhang JJ.</p>
 </footer>

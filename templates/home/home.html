@@ -1,64 +1,43 @@
 {{template "Tpl/header" .}}
-{{template "Tpl/headerSidebar" .}}
+{{template "Tpl/headerSecond" .}}
 {{template "Tpl/sidebar" .}}
 <!-- content start -->
-<div class="admin-content">
 
-   
 
-<!-- content end -->
+  <div class="admin-content">
+      <div>
+        <ul class="am-nav am-nav-tabs">
+          <li class="am-active"><a href="#">首页</a></li>
+          <li><a href="#">项目</a></li>
+          <li class="am-dropdown" data-am-dropdown>
+            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+              菜单 <span class="am-icon-caret-down"></span>
+            </a>
+            <ul class="am-dropdown-content">
+              ...
+            </ul>
+          </li>
+        </ul>
+      </div>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
+     <p>jjjjjjjjjjj</p>
 
+  <!-- content end -->
+  </div>
 </div>
+
 {{template "Tpl/footer" .}}
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/amazeui.min.js"></script>
-<script src="/js/amazeui.tree.min.js"></script>
-<script src="/js/app.js"></script>
-<script>
-  // demo 1
-  var data = [
-    {
-      title: '苹果公司',
-      type: 'folder',
-      products: [
-        {
-          title: 'iPhone',
-          type: 'item'
-        },
-        {
-          title: 'iMac',
-          type: 'item'
-        },
-        {
-          title: 'MacBook Pro',
-          type: 'item'
-        }
-      ]
-    },
-    {
-      title: '微软公司',
-      type: 'folder',
-      products: []
-    },
-    {
-      title: 'GitHub',
-      type: 'folder',
-      products: []
-    }
-  ];
-
-  $('#firstTree').tree({
-    dataSource: function(options, callback) {
-      // 模拟异步加载
-      setTimeout(function() {
-        callback({data: options.products || data});
-      }, 400);
-    },
-    multiSelect: false,
-    cacheItems: true,
-    folderSelect: false
-  });
-</script>
 </body>
 </html>
