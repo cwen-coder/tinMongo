@@ -1,7 +1,8 @@
 <div class="am-cf admin-main">
   <!-- sidebar start -->
-  <div class="admin-sidebar am-offcanvas me-sidebar" id="admin-offcanvas">
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
+    <div class="me-sidebar">
       <ul class="am-tree" id="firstTree">
         <li class="am-tree-branch am-hide" data-template="treebranch">
           <div class="am-tree-branch-header">
@@ -20,8 +21,13 @@
           </button>
         </li>
       </ul>
-
-
+    </div>     
+      <div class="am-panel am-panel-default admin-sidebar-panel">
+        <div class="am-panel-bd">
+          <p><span class="am-icon-bookmark"></span> 公告</p>
+          <p>时光静好，与君语；细水流年，与君同。—— CWen</p>
+        </div>
+      </div>
       <div class="am-panel am-panel-default admin-sidebar-panel">
         <div class="am-panel-bd">
           <p><span class="am-icon-tag"></span> wiki</p>
