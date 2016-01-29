@@ -1,0 +1,80 @@
+{{template "Tpl/header" .}}
+{{template "Tpl/headerSecond" .}}
+{{template "Tpl/sidebar" .}}
+
+<!-- content start -->
+
+  <div class="admin-content">
+  {{template "Tpl/navigation" .}}
+  <div class="am-g am-g-fixed am-margin-top">
+    <div class="am-panel am-panel-default">
+    <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#command-line'}">
+        <a href="">Command Line </a>(db.serverCmdLineOpts())<span class="am-icon-chevron-down am-fr" ></span></div>
+      <div id="command-line" class="am-in">
+        <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
+          <tbody>
+            <tr>
+              <td class="am-text-center">/usr/bin/mongod --config /etc/mongod.conf</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="am-g am-g-fixed am-margin-top">
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#connection-info'}">Connection<span class="am-icon-chevron-down am-fr" ></span></div>
+      <div id="connection-info" class="am-in">
+        <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
+          <tbody>
+            <tr>
+              <td style="width:30%;">Host</td>
+              <td style="width:70%;">127.0.0.1</td>
+            </tr>
+            <tr>
+              <td>Port</td>
+              <td>27017</td>
+            </tr>
+            <tr>
+              <td>Username</td>
+              <td> ****** </td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td> ****** </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="am-g am-g-fixed am-margin-top">
+    <div class="am-panel am-panel-default">
+      <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#web-server-info'}">Web 服务器<span class="am-icon-chevron-down am-fr" ></span></div>
+      <div id="web-server-info" class="am-in">
+        <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
+          <tbody>
+            <tr>
+              <td style="width:30%;">Golang 版本</td>
+              <td style="width:70%;">27017</td>
+            </tr>
+            <tr>
+              <td>Web server</td>
+              <td>TinMongo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- content end -->
+  </div>
+</div>
+
+{{template "Tpl/footer" .}}
+
+</body>
+</html>

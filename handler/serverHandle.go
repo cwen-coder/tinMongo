@@ -6,5 +6,9 @@ import (
 )
 
 func Home(r render.Render) {
-	r.HTML(200, "home/home", nil)
+	r.HTML(200, "server/home", nil)
+}
+
+func Status(r render.Render) {
+	r.HTML(200, "server/status", nil)
 }

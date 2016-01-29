@@ -5,3 +5,8 @@
 .am-g-fixed {
     margin-left: 17px;
 }
+
+.me-panel-header {
+    font-weight: bold;
+    text-align: center;
+}
