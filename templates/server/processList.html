@@ -7,21 +7,20 @@
       
         
       <div class="am-g am-g-fixed am-margin-top">
-          <div >
-              <a href=""><i class="am-icon-plus"></i>创建数据库</a>
-          </div>
         <div class="am-panel am-panel-default">
-        <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#databases-info'}">数据库 <span class="am-icon-chevron-down am-fr" ></span></div>
-          <div id="databases-info" class="am-in">
+        <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#processList-info'}">进程 (db.$cmd.sys.inprog.find({$all:1})) <span class="am-icon-chevron-down am-fr" ></span></div>
+          <div id="processList-info" class="am-in">
             <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
             <thead>
-                <th>Name</th>
-                <th>Size</th>
-                <th>Storage Size</th>
-                <th>Data Size</th>
-                <th>Index Size</th>
-                <th>Collections </th>
-                <th>Objects</th>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Client  </th>
+                <th>Active</th>
+                <th>LockType</th>
+                <th>Waiting </th>
+                <th>SecsRunning</th>
+                <th>Operation</th>
+                <th>NameSpace</th>
             </thead>
               <tbody>
                 <tr>

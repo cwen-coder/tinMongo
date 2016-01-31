@@ -16,3 +16,7 @@ func Status(r render.Render) {
 func Databases(r render.Render) {
 	r.HTML(200, "server/databases", nil)
 }
+
+func ProcessList(r render.Render) {
+	r.HTML(200, "server/processList", nil)
+}
