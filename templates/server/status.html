@@ -6,17 +6,358 @@
   {{template "Tpl/navigation" .}}
     <div class="am-g am-g-fixed am-margin-top">
       <div class="am-panel am-panel-default">
-        <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#web-server-info'}">Server Status ({serverStatus:1})<span class="am-icon-chevron-down am-fr" ></span></div>
-        <div id="web-server-info" class="am-in">
+        <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#server-status-info'}">Server Status ({serverStatus:1})<span class="am-icon-chevron-down am-fr" ></span></div>
+        <div id="server-status-info" class="am-in">
           <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
             <tbody>
               <tr>
-                <td style="width:30%;">Golang 版本</td>
-                <td style="width:70%;">27017</td>
+                <td style="width:30%;">HOST</td>
+                <td style="width:70%;"> "133-130-56-224"</td>
               </tr>
               <tr>
-                <td>Web server</td>
-                <td>TinMongo</td>
+                <td>version</td>
+                <td>"2.6.11"</td>
+              </tr>
+              <tr>
+                <td>process</td>
+                <td>"mongod"</td>
+              </tr>
+              <tr>
+                <td>pid</td>
+                <td>"mongod"</td>
+              </tr>
+               <tr>
+                <td>uptime</td>
+                <td>4909741s (57days)</td>
+              </tr>
+               <tr>
+                <td>uptimeMillis</td>
+                <td>NumberLong(4909740965)</td>
+              </tr>
+              <tr>
+                <td>uptimeEstimate</td>
+                <td>45525554</td>
+              </tr>
+              <tr>
+                <td>localTime</td>
+                <td>ISODate("2016-01-31T13:49:18.74Z")</td>
+              </tr>
+              <tr>
+                <td>asserts</td>
+                <td>
+                    {
+                       "regular": NumberInt(0),
+                       "warning": NumberInt(0),
+                       "msg": NumberInt(0),
+                       "user": NumberInt(13),
+                       "rollovers": NumberInt(0) 
+                    }
+                </td>
+                </tr>
+                <tr>
+                  <td>backgroundFlushing</td>
+                  <td>
+                    {
+                       "flushes": NumberInt(81828),
+                       "total_ms": NumberInt(106818),
+                       "average_ms": 1.305396685731,
+                       "last_ms": NumberInt(3),
+                       "last_finished": ISODate("2016-01-31T13:48:27.742Z") 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>connections</td>
+                  <td>
+                    {
+                       "current": NumberInt(2),
+                       "available": NumberInt(51198),
+                       "totalCreated": NumberLong(540) 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>cursors</td>
+                  <td>
+                    {
+                       "note": "deprecated, use server status metrics",
+                       "clientCursors_size": NumberInt(0),
+                       "totalOpen": NumberInt(0),
+                       "pinned": NumberInt(0),
+                       "totalNoTimeout": NumberInt(0),
+                       "timedOut": NumberInt(0) 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>dur</td>
+                  <td>
+                    {
+                       "commits": NumberInt(30),
+                       "journaledMB": 0,
+                       "writeToDataFilesMB": 0,
+                       "compression": 0,
+                       "commitsInWriteLock": NumberInt(0),
+                       "earlyCommits": NumberInt(0),
+                       "timeMs": {
+                         "dt": NumberInt(3070),
+                         "prepLogBuffer": NumberInt(0),
+                         "writeToJournal": NumberInt(0),
+                         "writeToDataFiles": NumberInt(0),
+                         "remapPrivateView": NumberInt(0) 
+                      } 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>extra_info</td>
+                  <td>
+                    {
+                       "note": "fields vary by platform",
+                       "heap_usage_bytes": NumberInt(62607776),
+                       "page_faults": NumberInt(2882) 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>globalLock</td>
+                  <td>
+                    {
+                       "totalTime": NumberLong(4909740966000),
+                       "lockTime": NumberLong(44502256),
+                       "currentQueue": {
+                         "total": NumberInt(0),
+                         "readers": NumberInt(0),
+                         "writers": NumberInt(0) 
+                      },
+                       "activeClients": {
+                         "total": NumberInt(0),
+                         "readers": NumberInt(0),
+                         "writers": NumberInt(0) 
+                      } 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>indexCounters</td>
+                  <td>
+                    {
+                       "accesses": NumberInt(466),
+                       "hits": NumberInt(466),
+                       "misses": NumberInt(0),
+                       "resets": NumberInt(0),
+                       "missRatio": 0 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>locks</td>
+                  <td>
+                    {
+                       ".": {
+                         "timeLockedMicros": {
+                           "R": NumberLong(99665727),
+                           "W": NumberLong(44502256) 
+                        },
+                         "timeAcquiringMicros": {
+                           "R": NumberLong(53720198),
+                           "W": NumberLong(13339342) 
+                        } 
+                      },
+                       "admin": {
+                         "timeLockedMicros": {
+                           "r": NumberLong(34729476),
+                           "w": NumberLong(0) 
+                        },
+                         "timeAcquiringMicros": {
+                           "r": NumberLong(9258775),
+                           "w": NumberLong(0) 
+                        } 
+                      },
+                       "local": {
+                         "timeLockedMicros": {
+                           "r": NumberLong(16524416),
+                           "w": NumberLong(23) 
+                        },
+                         "timeAcquiringMicros": {
+                           "r": NumberLong(6369271),
+                           "w": NumberLong(1) 
+                        } 
+                      },
+                       "cwenwx": {
+                         "timeLockedMicros": {
+                           "r": NumberLong(6708254),
+                           "w": NumberLong(61980) 
+                        },
+                         "timeAcquiringMicros": {
+                           "r": NumberLong(2081831),
+                           "w": NumberLong(21) 
+                        } 
+                      } 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>network</td>
+                  <td>
+                    {
+                       "bytesIn": NumberInt(510189),
+                       "bytesOut": NumberInt(1404866),
+                       "numRequests": NumberInt(6156) 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>opcounters</td>
+                  <td>
+                    {
+                       "insert": NumberInt(2),
+                       "query": NumberInt(246605),
+                       "update": NumberInt(0),
+                       "delete": NumberInt(0),
+                       "getmore": NumberInt(0),
+                       "command": NumberInt(4159) 
+                    }
+                  </td>
+                </tr>
+                <tr>
+                  <td>opcountersRepl</td>
+                  <td>
+                    {
+                       "insert": NumberInt(0),
+                       "query": NumberInt(0),
+                       "update": NumberInt(0),
+                       "delete": NumberInt(0),
+                       "getmore": NumberInt(0),
+                       "command": NumberInt(0) 
+                    }
+                  </td>
+              </tr>
+              <tr>
+                <td>recordStats</td>
+                <td>
+                  {
+                     "accessesNotInMemory": NumberInt(2),
+                     "pageFaultExceptionsThrown": NumberInt(0),
+                     "admin": {
+                       "accessesNotInMemory": NumberInt(1),
+                       "pageFaultExceptionsThrown": NumberInt(0) 
+                    },
+                     "cwenwx": {
+                       "accessesNotInMemory": NumberInt(0),
+                       "pageFaultExceptionsThrown": NumberInt(0) 
+                    },
+                     "local": {
+                       "accessesNotInMemory": NumberInt(1),
+                       "pageFaultExceptionsThrown": NumberInt(0) 
+                    } 
+                  }
+                </td>
+              </tr>
+              <tr>
+                <td>writeBacksQueued</td>
+                <td>
+                  false
+                </td>
+              </tr>
+              <tr>
+                <td>mem</td>
+                <td>
+                  {
+                     "bits": NumberInt(64),
+                     "resident": NumberInt(10),
+                     "virtual": NumberInt(684),
+                     "supported": true,
+                     "mapped": NumberInt(240),
+                     "mappedWithJournal": NumberInt(480) 
+                  }
+                </td>
+              </tr>
+              <tr>
+                <td>metrics</td>
+                <td>
+                    {
+                       "cursor": {
+                         "timedOut": NumberLong(0),
+                         "open": {
+                           "noTimeout": NumberLong(0),
+                           "pinned": NumberLong(0),
+                           "total": NumberLong(0) 
+                        } 
+                      },
+                       "document": {
+                         "deleted": NumberLong(0),
+                         "inserted": NumberLong(2),
+                         "returned": NumberLong(3604),
+                         "updated": NumberLong(0) 
+                      },
+                       "getLastError": {
+                         "wtime": {
+                           "num": NumberInt(0),
+                           "totalMillis": NumberInt(0) 
+                        },
+                         "wtimeouts": NumberLong(0) 
+                      },
+                       "operation": {
+                         "fastmod": NumberLong(0),
+                         "idhack": NumberLong(0),
+                         "scanAndOrder": NumberLong(2) 
+                      },
+                       "queryExecutor": {
+                         "scanned": NumberLong(2),
+                         "scannedObjects": NumberLong(2) 
+                      },
+                       "record": {
+                         "moves": NumberLong(0) 
+                      },
+                       "repl": {
+                         "apply": {
+                           "batches": {
+                             "num": NumberInt(0),
+                             "totalMillis": NumberInt(0) 
+                          },
+                           "ops": NumberLong(0) 
+                        },
+                         "buffer": {
+                           "count": NumberLong(0),
+                           "maxSizeBytes": NumberInt(268435456),
+                           "sizeBytes": NumberLong(0) 
+                        },
+                         "network": {
+                           "bytes": NumberLong(0),
+                           "getmores": {
+                             "num": NumberInt(0),
+                             "totalMillis": NumberInt(0) 
+                          },
+                           "ops": NumberLong(0),
+                           "readersCreated": NumberLong(0) 
+                        },
+                         "preload": {
+                           "docs": {
+                             "num": NumberInt(0),
+                             "totalMillis": NumberInt(0) 
+                          },
+                           "indexes": {
+                             "num": NumberInt(0),
+                             "totalMillis": NumberInt(0) 
+                          } 
+                        } 
+                      },
+                       "storage": {
+                         "freelist": {
+                           "search": {
+                             "bucketExhausted": NumberLong(0),
+                             "requests": NumberLong(17),
+                             "scanned": NumberLong(29) 
+                          } 
+                        } 
+                      },
+                       "ttl": {
+                         "deletedDocuments": NumberLong(0),
+                         "passes": NumberLong(81828) 
+                      } 
+                    }                 
+                </td>
               </tr>
             </tbody>
           </table>

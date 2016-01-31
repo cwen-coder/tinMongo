@@ -1,0 +1,35 @@
+{{template "Tpl/header" .}}
+{{template "Tpl/headerSecond" .}}
+{{template "Tpl/sidebar" .}}
+
+  <div class="admin-content">
+  {{template "Tpl/navigation" .}}
+      <div class="am-g am-g-fixed am-margin-top">
+        <div class="am-panel am-panel-default">
+        <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#databases-info'}">数据库 <span class="am-icon-chevron-down am-fr" ></span></div>
+          <div id="databases-info" class="am-in">
+            <table class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
+            <thead>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Storage Size</th>
+                <th>Data Size</th>
+                <th>Index Size</th>
+                <th>Collections </th>
+                <th>Objects</th>
+            </thead>
+              <tbody>
+                <tr>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  {{template "Tpl/footer" .}}
+
+  </body>
+  </html>

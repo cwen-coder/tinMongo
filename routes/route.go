@@ -10,4 +10,5 @@ func Route(m *martini.ClassicMartini) {
 
 	m.Get("/home", handler.Home)
 	m.Get("/status", handler.Status)
+	m.Get("/databases", handler.Databases)
 }

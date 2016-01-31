@@ -39,7 +39,7 @@
 
   <!-- sidebar end -->
 
-  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <script src="/js/amazeui.min.js"></script>
 <script src="/js/amazeui.tree.min.js"></script>
 <script src="/js/app.js"></script>

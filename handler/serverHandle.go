@@ -12,3 +12,7 @@ func Home(r render.Render) {
 func Status(r render.Render) {
 	r.HTML(200, "server/status", nil)
 }
+
+func Databases(r render.Render) {
+	r.HTML(200, "server/databases", nil)
+}

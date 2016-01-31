@@ -2,7 +2,7 @@
   <ul class="am-nav am-nav-tabs">
     <li class="am-active"><a href="/home">服务器</a></li>
     <li><a href="/status">状态</a></li>
-    <li><a href="#">数据库</a></li>
+    <li><a href="/databases">数据库</a></li>
     <li><a href="#">进程</a></li>
     <li><a href="#">命令</a></li>
     <li><a href="#">代码执行</a></li>
