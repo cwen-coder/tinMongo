@@ -1,0 +1,72 @@
+{{template "Tpl/header" .}}
+{{template "Tpl/headerSecond" .}}
+{{template "Tpl/sidebar" .}}
+
+  <div class="admin-content">
+  {{template "Tpl/navigation" .}}
+      
+        
+      <div class="am-g am-g-fixed am-margin-top">
+          <div >
+              <a href=""><i class="am-icon-angle-double-right"></i>&nbsp;&nbsp; Javascript API
+</a>
+          </div>
+          <form class="am-form">
+              <fieldset>
+                  <div class="am-form-group" id="divCode">
+                      <textarea class="" rows="15" id="code"></textarea>
+                  </div>
+                  <div class="am-form-group" id="divDatabase">
+                       <label for="Database">Database:</label>
+                       <select id="Database">
+                         <option value="option1">Admin</option>
+                         <option value="option2">Admin</option>
+                         <option value="option3">Admin</option>
+                       </select>
+                       <span class="am-form-caret"></span>
+                 </div>
+                 <div class="am-form-group">
+                      <label for="Format">Argument:</label>
+                      <button type="button" class="am-btn am-btn-default" id="argumentAdd"><i class="am-icon-plus"></i>Add</button>
+                      <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-form-group">
+                        <button type="button" class="am-btn am-btn-default am-btn-block">执行代码</button>     
+                    </div>
+                </fieldset>
+          </form>
+          
+        </div>
+    </div>
+</div>
+{{template "Tpl/footer" .}}
+<script type="text/javascript">
+(function() {
+  var dom = {
+    argumentAdd : $("#argumentAdd"),
+    divCode : $("#divCode"),
+    divDatabase : $("#divDatabase"),
+    formGroup : $("form fieldset div.am-form-group a")
+  }
+
+  var argument = {
+     init : function(){
+          this.eventFn();
+     },
+     eventFn : function() {
+          dom.argumentAdd.bind('click',function() {
+            var divArgument = "<div class=\"am-form-group\"><span>Argument #0[JSON]  &nbsp;&nbsp;<a href=\"#\" name >Remove</a></span><textarea rows=\"4\"></textarea></div>"
+              dom.divDatabase.before(divArgument);
+          });
+
+          dom.formGroup.bind('click',function() {
+              console.log("jjj");
+          });
+     }
+  }
+
+  argument.init();
+})()
+</script>
+  </body>
+  </html>

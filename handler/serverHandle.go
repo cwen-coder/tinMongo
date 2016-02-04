@@ -20,3 +20,11 @@ func Databases(r render.Render) {
 func ProcessList(r render.Render) {
 	r.HTML(200, "server/processList", nil)
 }
+
+func Command(r render.Render) {
+	r.HTML(200, "server/command", nil)
+}
+
+func Execute(r render.Render) {
+	r.HTML(200, "server/execute", nil)
+}

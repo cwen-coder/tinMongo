@@ -12,4 +12,6 @@ func Route(m *martini.ClassicMartini) {
 	m.Get("/status", handler.Status)
 	m.Get("/databases", handler.Databases)
 	m.Get("/processList", handler.ProcessList)
+	m.Get("/command", handler.Command)
+	m.Get("/execute", handler.Execute)
 }

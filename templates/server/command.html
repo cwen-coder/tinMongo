@@ -1,0 +1,47 @@
+{{template "Tpl/header" .}}
+{{template "Tpl/headerSecond" .}}
+{{template "Tpl/sidebar" .}}
+
+  <div class="admin-content">
+  {{template "Tpl/navigation" .}}
+      
+        
+      <div class="am-g am-g-fixed am-margin-top">
+          <div >
+              <a href=""><i class="am-icon-angle-double-right"></i>&nbsp;&nbsp; List of database commands</a>
+          </div>
+          <form class="am-form">
+              <fieldset>
+                  <div class="am-form-group">
+                      <textarea class="" rows="5" id="doc-ta-1"></textarea>
+                  </div>
+                  <div class="am-form-group">
+                       <label for="Database">Database:</label>
+                       <select id="Database">
+                         <option value="option1">Admin</option>
+                         <option value="option2">Admin</option>
+                         <option value="option3">Admin</option>
+                       </select>
+                       <span class="am-form-caret"></span>
+                 </div>
+                 <div class="am-form-group">
+                      <label for="Format">Format:</label>
+                      <select id="Format">
+                        <option value="json">JSON</option>
+                        <option value="array">Array</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-form-group">
+                        <button type="button" class="am-btn am-btn-default am-btn-block">执行代码</button>     
+                    </div>
+                </fieldset>
+          </form>
+          
+        </div>
+    </div>
+</div>
+  {{template "Tpl/footer" .}}
+
+  </body>
+  </html>
