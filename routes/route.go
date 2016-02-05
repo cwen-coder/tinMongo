@@ -14,4 +14,5 @@ func Route(m *martini.ClassicMartini) {
 	m.Get("/processList", handler.ProcessList)
 	m.Get("/command", handler.Command)
 	m.Get("/execute", handler.Execute)
+	m.Get("/replication", handler.Replication)
 }

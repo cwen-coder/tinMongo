@@ -6,7 +6,7 @@
     <li><a href="/processList">进程</a></li>
     <li><a href="/command">命令</a></li>
     <li><a href="/execute">代码执行</a></li>
-    <li><a href="#">主/从</a></li>
+    <li><a href="/replication">主/从</a></li>
     <!-- <li class="am-dropdown" data-am-dropdown>
       <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
         菜单 <span class="am-icon-caret-down"></span>

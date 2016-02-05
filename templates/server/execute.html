@@ -14,7 +14,7 @@
           <form class="am-form">
               <fieldset>
                   <div class="am-form-group" id="divCode">
-                      <textarea class="" rows="15" id="code"></textarea>
+                      <textarea class="" rows="14" id="code"></textarea>
                   </div>
                   <div class="am-form-group" id="divDatabase">
                        <label for="Database">Database:</label>
@@ -25,11 +25,13 @@
                        </select>
                        <span class="am-form-caret"></span>
                  </div>
+                 <div id="arguments"></div>
                  <div class="am-form-group">
                       <label for="Format">Argument:</label>
                       <button type="button" class="am-btn am-btn-default" id="argumentAdd"><i class="am-icon-plus"></i>Add</button>
                       <span class="am-form-caret"></span>
                     </div>
+                    
                     <div class="am-form-group">
                         <button type="button" class="am-btn am-btn-default am-btn-block">执行代码</button>     
                     </div>
@@ -46,7 +48,7 @@
     argumentAdd : $("#argumentAdd"),
     divCode : $("#divCode"),
     divDatabase : $("#divDatabase"),
-    formGroup : $("form fieldset div.am-form-group a")
+    arguments : $("#arguments")
   }
 
   var argument = {
@@ -55,18 +57,27 @@
      },
      eventFn : function() {
           dom.argumentAdd.bind('click',function() {
-            var divArgument = "<div class=\"am-form-group\"><span>Argument #0[JSON]  &nbsp;&nbsp;<a href=\"#\" name >Remove</a></span><textarea rows=\"4\"></textarea></div>"
-              dom.divDatabase.before(divArgument);
+            var no = dom.arguments.children("div").length;
+            var divArgument = "<div class=\"am-form-group\">Argument #<span>" + no +  "</span>[JSON]  &nbsp;&nbsp;<a href=\"#\" onclick=\"removeArgument(this);return false;\" >Remove</a><textarea rows=\"4\"></textarea></div>"
+              dom.arguments.append(divArgument);
           });
 
-          dom.formGroup.bind('click',function() {
-              console.log("jjj");
-          });
      }
   }
 
   argument.init();
 })()
+
+function removeArgument(link) {
+  $(link).parent().remove();
+  
+  //re-order
+  var divs = $("#arguments").children("div");
+  for (var i=0; i<divs.length; i++) {
+    $(divs[i]).find("span").html(i);
+  }
+}
+
 </script>
   </body>
   </html>

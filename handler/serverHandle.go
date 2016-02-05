@@ -28,3 +28,7 @@ func Command(r render.Render) {
 func Execute(r render.Render) {
 	r.HTML(200, "server/execute", nil)
 }
+
+func Replication(r render.Render) {
+	r.HTML(200, "server/replication", nil)
+}
