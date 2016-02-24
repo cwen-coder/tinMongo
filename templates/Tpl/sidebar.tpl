@@ -51,7 +51,7 @@
       type: 'folder',
       products: [
         {
-          title: '<a href=\"#\">iPhone</a>',
+          title: '<a href=\"/db/home\">iPhone</a>',
           type: 'item'
         },
         {
