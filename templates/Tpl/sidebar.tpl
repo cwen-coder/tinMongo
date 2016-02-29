@@ -47,11 +47,11 @@
   // demo 1
   var data = [
     {
-      title: '苹果公司',
+      title: '<a href=\"/db/home\">苹果公司</a>',
       type: 'folder',
       products: [
         {
-          title: '<a href=\"/db/home\">iPhone</a>',
+          title: 'iPhone',
           type: 'item'
         },
         {
