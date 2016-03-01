@@ -8,3 +8,7 @@ import (
 func DbHome(r render.Render) {
 	r.HTML(200, "db/home", nil)
 }
+
+func DbNewCollection(r render.Render) {
+	r.HTML(200, "db/newCollection", nil)
+}

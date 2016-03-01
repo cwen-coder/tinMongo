@@ -14,3 +14,16 @@
 .me-db-navigation {
     margin-left: 15px;
 }
+
+.me-div-left {
+    float: left;
+}
+
+.me-cap-col-op {
+    padding-left: 98px;
+}
+
+.me-cap-col-op span{
+    background-color: #f3f3f3;
+    padding: 5px 5px 5px 5px;
+}

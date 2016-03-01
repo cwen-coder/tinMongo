@@ -1,0 +1,50 @@
+{{template "Tpl/header" .}}
+{{template "Tpl/headerSecond" .}}
+{{template "Tpl/sidebar" .}}
+
+<!-- content start -->
+
+  <div class="admin-content">
+  {{template "Tpl/dbNavigationOne" .}}
+  {{template "Tpl/dbNavigationTwo" .}}
+  <div class="am-g am-g-fixed am-margin-top">
+    <div class="am-panel am-panel-default">
+    <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#database-statistics'}">
+        创建集合<span class="am-icon-chevron-down am-fr" ></span></div>
+     <div id="database-statistics" class="am-in am-container">
+     <br>
+        <form class="am-form am-form-horizontal" >
+            <div class="am-form-group">
+                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">Name</label>
+                <div class="am-u-sm-8 am-u-end" >
+                  <input type="text" id="doc-ipt-3" placeholder="输入集合名">
+                </div>
+            </div>
+            <div class="me-cap-col-op">
+              <span class="am-icon-angle-double-down" data-am-collapse="{target: '#cap-cal-op'}" >&nbsp;&nbsp;Capped Collection Options</span>
+            </div>
+
+            <div id="cap-cal-op" class="am-in">
+               <div class="am-form-group">
+                    <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">Is Capped</label>
+                    <div class="am-u-sm-8 am-u-end am-checkbox" >
+                        <label>
+                              <input type="checkbox"> 
+                        </label>
+                    </div>
+               </div>
+            </div>
+            
+        </form>
+        <br>
+        </div>
+    </div>
+  </div>
+  <!-- content end -->
+  </div>
+</div>
+
+{{template "Tpl/footer" .}}
+
+</body>
+</html>
