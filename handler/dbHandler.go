@@ -12,3 +12,7 @@ func DbHome(r render.Render) {
 func DbNewCollection(r render.Render) {
 	r.HTML(200, "db/newCollection", nil)
 }
+
+func DbTransfer(r render.Render) {
+	r.HTML(200, "db/dbTransfer", nil)
+}

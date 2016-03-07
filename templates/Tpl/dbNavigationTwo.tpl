@@ -2,10 +2,9 @@
   <ul class="am-nav am-nav-tabs">
     <li class="am-active"><a href="#">统计</a></li>
     <li><a href="/db/newCollection">创建集合</a></li>
-    <li><a href="#">命令</a></li>
-    <li><a href="#">进程</a></li>
-    <li><a href="#">执行代码</a></li>
-    <li><a href="#">克隆</a></li>
+    <li><a href="/command">命令</a></li>
+    <li><a href="/execute">执行代码</a></li>
+    <li><a href="/db/dbTransfer">克隆</a></li>
     <li><a href="#">导出</a></li>
     <li><a href="#">导入</a></li>
     <li><a href="#">用户</a></li>

@@ -18,4 +18,5 @@ func Route(m *martini.ClassicMartini) {
 
 	m.Get("/db/home", handler.DbHome)
 	m.Get("/db/newCollection", handler.DbNewCollection)
+	m.Get("/db/dbTransfer", handler.DbTransfer)
 }
