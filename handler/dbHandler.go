@@ -20,3 +20,7 @@ func DbTransfer(r render.Render) {
 func DbExport(r render.Render) {
 	r.HTML(200, "db/dbExport", map[string]interface{}{})
 }
+
+func DbImport(r render.Render) {
+	r.HTML(200, "db/dbImport", map[string]interface{}{})
+}

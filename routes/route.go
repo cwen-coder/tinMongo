@@ -20,4 +20,5 @@ func Route(m *martini.ClassicMartini) {
 	m.Get("/db/newCollection", handler.DbNewCollection)
 	m.Get("/db/dbTransfer", handler.DbTransfer)
 	m.Get("/db/dbExport", handler.DbExport)
+	m.Get("/db/dbImport", handler.DbImport)
 }

@@ -6,29 +6,29 @@ import (
 )
 
 func Home(r render.Render) {
-	r.HTML(200, "server/home", nil)
+	r.HTML(200, "server/home", map[string]interface{}{})
 }
 
 func Status(r render.Render) {
-	r.HTML(200, "server/status", nil)
+	r.HTML(200, "server/status", map[string]interface{}{})
 }
 
 func Databases(r render.Render) {
-	r.HTML(200, "server/databases", nil)
+	r.HTML(200, "server/databases", map[string]interface{}{})
 }
 
 func ProcessList(r render.Render) {
-	r.HTML(200, "server/processList", nil)
+	r.HTML(200, "server/processList", map[string]interface{}{})
 }
 
 func Command(r render.Render) {
-	r.HTML(200, "server/command", nil)
+	r.HTML(200, "server/command", map[string]interface{}{})
 }
 
 func Execute(r render.Render) {
-	r.HTML(200, "server/execute", nil)
+	r.HTML(200, "server/execute", map[string]interface{}{})
 }
 
 func Replication(r render.Render) {
-	r.HTML(200, "server/replication", nil)
+	r.HTML(200, "server/replication", map[string]interface{}{})
 }
