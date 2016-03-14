@@ -24,3 +24,7 @@ func DbExport(r render.Render) {
 func DbImport(r render.Render) {
 	r.HTML(200, "db/dbImport", map[string]interface{}{})
 }
+
+func DbUsers(r render.Render) {
+	r.HTML(200, "db/dbUsers", map[string]interface{}{})
+}

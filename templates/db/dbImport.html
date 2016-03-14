@@ -28,44 +28,48 @@
                 <span>JS File: </span>
                 <button type="button" class="am-btn am-btn-default am-btn-sm">
                     <i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
-                  <input id="doc-form-file"  type="file" multiple>
-                  <span id="file-list"></span>
-                  <script>
-                    $(function() {
-                      $('#doc-form-file').on('change', function() {
-                        var fileNames = '';
-                        $.each(this.files, function() {
-                          fileNames += '<span class="am-badge">' + this.name + '</span> ';
-                        });
-                        $('#file-list').html(fileNames);
-                      });
-                    });
-                  </script>
-              </div>
-          </div>
-          <div>
-            <strong>
-               <span>Download?   &nbsp;&nbsp;&nbsp;<label>
-                  <input type="checkbox"  value="">
-                </label>
-                </span>
-            </strong>
-            <hr>
-          </div>
-          <div>
-            <strong>
-               <span>Compressed:   &nbsp;&nbsp;&nbsp;<label>
-                  <input type="checkbox"  value="">GZIP 
-                </label>
-                </span>
-            </strong>
-            <hr>
+                  <input id="js-file"  type="file" multiple>
+                  <span id="js-file-list"></span>
+              </div>       
           </div>
           <div>
             <strong><span>Confirm</span></strong>
             <hr>
             <div class="am-u-sm-8 am-u-sm-centered">
-              <button type="button" class="am-btn am-btn-primary am-btn-block">导出</button>
+              <button type="button" class="am-btn am-btn-primary am-btn-block">导入</button>
+            </div>
+            </div>    
+        </form>
+        <br>
+        <br>
+        <br>
+        <form class="am-form am-form-horizontal am-container" >
+
+        <div>
+          <strong>
+             <span>.JSON file exported with <a href="http://www.mongodb.org/display/DOCS/Import+Export+Tools">mongoexport:</a></span>
+          </strong>
+          <hr>
+          <div class="am-form-group">
+            <span class="am-u-sm-3">Import to collection name:</span>
+            <div class="am-u-sm-8 am-u-end" >
+              <input type="text">
+            </div>
+          </div> 
+          <div class="am-form-group am-form-file">
+           
+              <span>JSON File: </span>
+              <button type="button" class="am-btn am-btn-default am-btn-sm">
+                  <i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+                <input id="json-file"  type="file" multiple>
+                <span id="json-file-list"></span>
+          </div>
+        </div>
+          <div>
+            <strong><span>Confirm</span></strong>
+            <hr>
+            <div class="am-u-sm-8 am-u-sm-centered">
+              <button type="button" class="am-btn am-btn-primary am-btn-block">导入</button>
             </div>
             </div>
         </form>
@@ -76,7 +80,7 @@
   <!-- content end -->
   </div>
 </div>
-
+<script src="/js/db/dbImport.js"></script>
 {{template "Tpl/footer" .}}
 </body>
 </html>
