@@ -13,96 +13,30 @@
   <div class="am-g am-g-fixed am-margin-top">
     <div class="am-panel am-panel-default">
     <div class="am-panel-hd am-cf me-panel-header" data-am-collapse="{target: '#database-statistics'}">
-        克隆<span class="am-icon-chevron-down am-fr" ></span></div>
+        用户<span class="am-icon-chevron-down am-fr" ></span></div>
      <div id="database-statistics" class="am-in am-container">
-     <br>
-  
-        <form class="am-form am-form-horizontal am-container" >
-            <div>
-              <strong>
-                 <span>Collections [All  &nbsp;&nbsp;&nbsp;<label>
-                  <input type="checkbox" id = "dbTransferAll" value="">
-                </label>]</span>
-              </strong>
-             
-              <hr>
-              <div class="am-form-group">
-                <label class="am-checkbox-inline">
-                  <input type="checkbox" name="collection" value="option1"> 选我
-                </label>
-                <label class="am-checkbox-inline">
-                  <input type="checkbox" name="collection" value="option2"> 同时可以选我
-                </label>
-                <label class="am-checkbox-inline">
-                  <input type="checkbox" name="collection" value="option3"> 还可以选我
-                </label>
-              </div>
-          </div>
-          <div>
-            <strong><span>Target</span></strong>
-            <hr>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">Socket</label>
-              <div class="am-u-sm-8 am-u-end" >
-                <input type="text" >
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">Host</label>
-              <div class="am-u-sm-8 am-u-end" >
-                <input type="text" >
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">Port</label>
-              <div class="am-u-sm-8 am-u-end" >
-                <input type="text" value="27017">
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">Authenticate?</label>
-              <div class="am-u-sm-8 am-u-end am-checkbox me-cap-cal-op-checkbox" >
-                  <label>
-                      <input type="checkbox"> 
-                  </label>
-                </div>
-            </div>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">UserName</label>
-              <div class="am-u-sm-8 am-u-end" >
-                <input type="text">
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label class="am-u-sm-2 am-form-label">PassWord</label>
-              <div class="am-u-sm-8 am-u-end" >
-                <input type="password">
-              </div>
-            </div>
-            </div>
-            <div>
-              <strong><span>索引</span></strong>
-              <hr>
-              <div class="am-form-group">
-                  <label class="am-u-sm-2 am-form-label">Copy Indexes?</label>
-                    <div class="am-u-sm-8 am-u-end am-checkbox me-cap-cal-op-checkbox" >
-                  <label>
-                    <input type="checkbox" checked="checked"> 
-                  </label>
-                </div>
-                </div>
-            </div>
-            <div>
-              <strong><span>Confirm</span></strong>
-              <hr>
-              <div class="am-u-sm-8 am-u-sm-centered">
-                <button type="button" class="am-btn am-btn-primary am-btn-block">克隆</button>
-              </div>
-              </div>
-          
-        </form>
         <br>
+         <a href="" id="users-list-a">Users</a> &nbsp; &nbsp;| &nbsp; &nbsp;  <a href="" id="add-user-a">Add User</a>
+        <br>
+        <div id="users-list" >
+          <table class="am-table am-table-striped am-table-hover">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>User</th>
+                      <th>Read Only</th>
+                      <th>Operation</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  
+              </tbody>
+          </table>
         </div>
+       <div id="add-user" style="display:none">
+         
+       </div>
+     </div>
     </div>
   </div>
   <!-- content end -->
@@ -110,6 +44,6 @@
 </div>
 
 {{template "Tpl/footer" .}}
-<script src="/js/db/dbTransfer.js"></script>
+<script src="/js/db/dbUsers.js"></script>
 </body>
 </html>
