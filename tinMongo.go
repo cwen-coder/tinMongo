@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/go-martini/martini"
-	"github.com/martini-contrib/render"
 	"html/template"
 	"runtime"
 	"tinMongo/config"
 	"tinMongo/routes"
+
+	"github.com/go-martini/martini"
+	"github.com/martini-contrib/render"
 )
 
 func main() {
@@ -32,4 +33,5 @@ func main() {
 	port := ":" + config.GetPort()
 	m.RunOnAddr(port)
 	m.Run()
+
 }
