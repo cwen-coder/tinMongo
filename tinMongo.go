@@ -33,5 +33,4 @@ func main() {
 	port := ":" + config.GetPort()
 	m.RunOnAddr(port)
 	m.Run()
-
 }
