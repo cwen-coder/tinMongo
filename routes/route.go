@@ -1,8 +1,8 @@
 package routes
 
 import (
+	"github.com/cwen-coder/tinMongo/handler"
 	"github.com/go-martini/martini"
-	"tinMongo/handler"
 )
 
 func Route(m *martini.ClassicMartini) {

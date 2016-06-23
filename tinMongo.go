@@ -3,8 +3,9 @@ package main
 import (
 	"html/template"
 	"runtime"
-	"tinMongo/config"
-	"tinMongo/routes"
+
+	"github.com/cwen-coder/tinMongo/config"
+	"github.com/cwen-coder/tinMongo/routes"
 
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
