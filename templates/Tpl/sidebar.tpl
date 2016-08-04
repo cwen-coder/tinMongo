@@ -1,4 +1,4 @@
-<div class="am-cf admin-main">
+<div class="am-cf admin-main" id = "adminMain">
   <!-- sidebar start -->
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">

@@ -4,6 +4,6 @@
 
 <footer>
   <hr>
-  <p class="am-padding-left">© 2016 CWen  &&  Zhang JJ.</p>
+  <p class="am-padding-left">© 2016 CWen.</p>
 </footer>
 <script src="/js/style.js"></script>

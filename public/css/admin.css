@@ -20,7 +20,10 @@ ul {
 }
 
 .admin-main {
-  background: #f3f3f3;
+ /* background: #f3f3f3;*/
+
+  height:auto !important;
+ 
 }
 
 .admin-menu {

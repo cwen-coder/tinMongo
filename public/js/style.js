@@ -1,7 +1,7 @@
 (function() {
     // var dom = {
-    //     adminContent : $('.admin-content'),
-    //     panelHeader : $('.me-panel-header')
+    //     adminMain : $('.admin-main')
+    //   //  panelHeader : $('.me-panel-header')
     // }
 
     // var style = {
@@ -9,22 +9,13 @@
     //         this.eventFn();
     //     },
     //     eventFn : function() {
-    //         style.changeHeight();
-    //         dom.panelHeader.bind('click',function() {
-                
-    //         });
-            
-    //     },
-    //     changeHeight : function() {
-    //         var height = dom.adminContent.height();
-    //         if(height < 540) {
-    //             dom.adminContent.height(540);
-    //         } else {
-    //             dom.adminContent.height('100%');
-    //         }
+    //         dom.adminMain.minHeight = 
+    //         console.log(dom.adminMain.minHeight)
     //     }
+        
     // }
 
     // style.init();
+   document.getElementById("adminMain").style.minHeight = (screen.availHeight - 210)+ "px" ;
 })();
 
